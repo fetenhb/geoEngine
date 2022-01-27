@@ -1,0 +1,231 @@
+.carousel
+  > input[type="radio"]:nth-child(5):checked
+  ~ .carousel__next
+  > label:nth-child(1),
+.carousel
+  > input[type="radio"]:nth-child(5):checked
+  ~ .carousel__prev
+  > label:nth-child(4),
+.carousel
+  > input[type="radio"]:nth-child(4):checked
+  ~ .carousel__next
+  > label:nth-child(5),
+.carousel
+  > input[type="radio"]:nth-child(4):checked
+  ~ .carousel__prev
+  > label:nth-child(3),
+.carousel
+  > input[type="radio"]:nth-child(3):checked
+  ~ .carousel__next
+  > label:nth-child(4),
+.carousel
+  > input[type="radio"]:nth-child(3):checked
+  ~ .carousel__prev
+  > label:nth-child(2),
+.carousel
+  > input[type="radio"]:nth-child(2):checked
+  ~ .carousel__next
+  > label:nth-child(3),
+.carousel
+  > input[type="radio"]:nth-child(2):checked
+  ~ .carousel__prev
+  > label:nth-child(1),
+.carousel
+  > input[type="radio"]:nth-child(1):checked
+  ~ .carousel__next
+  > label:nth-child(2),
+.carousel
+  > input[type="radio"]:nth-child(1):checked
+  ~ .carousel__prev
+  > label:nth-child(5) {
+  opacity: 1 !important;
+  z-index: 3;
+}
+
+.carousel {
+  width: 100% !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+.carousel > input[type="radio"] {
+  position: absolute !important;
+  left: 0 !important;
+  opacity: 0 !important;
+  top: 0 !important;
+}
+.carousel > input[type="radio"]:checked ~ .carousel__items .carousel__item,
+.carousel > input[type="radio"]:checked ~ .carousel__prev > label,
+.carousel > input[type="radio"]:checked ~ .carousel__next > label {
+  opacity: 0 !important;
+}
+.carousel
+  > input[type="radio"]:nth-child(1):checked
+  ~ .carousel__items
+  .carousel__item:nth-child(1) {
+  opacity: 1 !important;
+}
+.carousel
+  > input[type="radio"]:nth-child(1):checked
+  ~ .carousel__nav
+  > label:nth-child(1) {
+  background: #ccc !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+.carousel
+  > input[type="radio"]:nth-child(2):checked
+  ~ .carousel__items
+  .carousel__item:nth-child(2) {
+  opacity: 1 !important;
+}
+.carousel
+  > input[type="radio"]:nth-child(2):checked
+  ~ .carousel__nav
+  > label:nth-child(2) {
+  background: #ccc !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+.carousel
+  > input[type="radio"]:nth-child(3):checked
+  ~ .carousel__items
+  .carousel__item:nth-child(3) {
+  opacity: 1 !important;
+}
+.carousel
+  > input[type="radio"]:nth-child(3):checked
+  ~ .carousel__nav
+  > label:nth-child(3) {
+  background: #ccc !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+.carousel
+  > input[type="radio"]:nth-child(4):checked
+  ~ .carousel__items
+  .carousel__item:nth-child(4) {
+  opacity: 1 !important;
+}
+.carousel
+  > input[type="radio"]:nth-child(4):checked
+  ~ .carousel__nav
+  > label:nth-child(4) {
+  background: #ccc !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+.carousel
+  > input[type="radio"]:nth-child(5):checked
+  ~ .carousel__items
+  .carousel__item:nth-child(5) {
+  opacity: 1 !important;
+}
+.carousel
+  > input[type="radio"]:nth-child(5):checked
+  ~ .carousel__nav
+  > label:nth-child(5) {
+  background: #ccc !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+.carousel__items {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-type: none !important;
+  width: 100% !important;
+  height: 600px !important;
+  position: relative !important;
+}
+.carousel__item {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1 !important;
+  transition: opacity 2s !important;
+  -webkit-transition: opacity 2s !important;
+}
+.carousel__item img {
+  width: 100% !important;
+  vertical-align: middle !important;
+}
+.carousel__prev > label,
+.carousel__next > label {
+  border: 1px solid #fff !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  display: block !important;
+  width: 40px !important;
+  height: 40px !important;
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  -webkit-transform: translateY(-50%) !important;
+  transition: all 0.3s ease !important;
+  -webkit-transition: all 0.3s ease !important;
+  opacity: 0 !important;
+  z-index: 2 !important;
+}
+.carousel__prev > label:hover,
+.carousel__prev > label:focus,
+.carousel__next > label:hover,
+.carousel__next > label:focus {
+  opacity: 0.5 !important;
+}
+.carousel__prev > label:before,
+.carousel__prev > label:after,
+.carousel__next > label:before,
+.carousel__next > label:after {
+  content: "" !important;
+  position: absolute !important;
+  width: inherit !important;
+  height: inherit !important;
+}
+.carousel__prev > label:before,
+.carousel__next > label:before {
+  background: linear-gradient(
+      to top,
+      #fff 0%,
+      #fff 10%,
+      rgba(51, 51, 51, 0) 10%
+    ),
+    linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%) !important;
+  width: 60% !important;
+  height: 60% !important;
+  top: 20% !important;
+}
+.carousel__prev > label {
+  left: 2% !important;
+}
+.carousel__prev > label:before {
+  left: 35% !important;
+  top: 20% !important;
+  transform: rotate(135deg) !important;
+  -webkit-transform: rotate(135deg) !important;
+}
+.carousel__next > label {
+  right: 2% !important;
+}
+.carousel__next > label:before {
+  left: 10% !important;
+  transform: rotate(315deg) !important;
+  -webkit-transform: rotate(315deg) !important;
+}
+.carousel__nav {
+  position: absolute !important;
+  bottom: 3% !important;
+  left: 0 !important;
+  text-align: center !important;
+  width: 100% !important;
+  z-index: 3 !important;
+}
+.carousel__nav > label {
+  border: 1px solid #fff !important;
+  display: inline-block !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  margin: 0 0.125% !important;
+  width: 20px !important;
+  height: 20px !important;
+}

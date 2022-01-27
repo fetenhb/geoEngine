@@ -1,0 +1,225 @@
+section#download {
+  background: linear-gradient(
+    90deg,
+    rgba(45, 165, 255, 1) 45%,
+    rgba(1, 223, 245, 1) 100%
+  );
+  text-align: center;
+  color: #fff;
+  transform: skewY(-3deg);
+  height: 550px;
+}
+@media (max-width: 1215px) {
+  section#download {
+    height: 760px;
+  }
+}
+@media (max-width: 900px) {
+  section#download {
+    height: 1060px;
+  }
+}
+@media (max-width: 615.2px) {
+  section#download {
+    height: 1360px;
+  }
+}
+@media (max-width: 600px) {
+  section#download {
+    height: 1660px;
+  }
+}
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+/* body {
+  font-family: "Montserrat", sans-serif;
+  background: #3ea0eb;
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.honeycomb {
+  transform: skewY(3deg) !important;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  transform: translateY(45.5px);
+}
+.aa ::after {
+  transform: translateX(-50%);
+}
+.honeycomb-cell {
+  flex: 0 1 280px;
+  max-width: 280px;
+  height: 182px;
+  margin: 86.6666666667px 10px 20px;
+  position: relative;
+  padding: 0.5em;
+  text-align: center;
+  z-index: 1;
+}
+.honeycomb-cell__title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  word-break: break-word;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.75em;
+  transition: opacity 350ms;
+}
+.honeycomb-cell__title > small {
+  font-weight: 300;
+  margin-top: 0.25em;
+}
+.honeycomb-cell__image {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+.honeycomb-cell::before,
+.honeycomb-cell::after {
+  content: "";
+}
+.honeycomb-cell::before,
+.honeycomb-cell::after,
+.honeycomb-cell__image {
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  display: block;
+  position: absolute;
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: -1;
+}
+.honeycomb-cell::before {
+  background: #fff;
+  transform: scale(1.055);
+}
+.honeycomb-cell::after {
+  background: #3ea0eb;
+  opacity: 0.5;
+  transition: opacity 350ms;
+}
+.honeycomb-cell:hover .honeycomb-cell__title {
+  opacity: 0;
+}
+.honeycomb-cell:hover::before {
+  background: #72f88e;
+}
+.honeycomb-cell:hover::after {
+  opacity: 0;
+}
+.honeycomb__placeholder {
+  display: none;
+  opacity: 0;
+  width: 280px;
+  margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+  .honeycomb-cell {
+    margin: 101px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .honeycomb-cell:nth-child(3n) {
+    margin-right: calc(50% - 140px);
+    margin-left: calc(50% - 140px);
+  }
+
+  .honeycomb__placeholder:nth-child(3n + 5) {
+    display: block;
+  }
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+  .honeycomb-cell:nth-child(5n + 4) {
+    margin-left: calc(50% - 300px);
+  }
+
+  .honeycomb-cell:nth-child(5n + 5) {
+    margin-right: calc(50% - 300px);
+  }
+
+  .honeycomb__placeholder:nth-child(5n),
+  .honeycomb__placeholder:nth-child(5n + 3) {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .honeycomb-cell:nth-child(7n + 5) {
+    margin-left: calc(50% - 440px);
+  }
+
+  .honeycomb-cell:nth-child(7n + 7),
+  .honeycomb-cell:nth-child(7n + 5):nth-last-child(2) {
+    margin-right: calc(50% - 440px);
+  }
+
+  .honeycomb__placeholder:nth-child(7n + 7),
+  .honeycomb__placeholder:nth-child(7n + 9),
+  .honeycomb__placeholder:nth-child(7n + 11) {
+    display: block;
+  }
+}
+.download h2 {
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.download h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 10%;
+  height: 1px;
+  background: var(--color-white);
+  transform: translateX(-50%);
+}
+.download-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.download-icon {
+  margin: 1rem 2rem;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}

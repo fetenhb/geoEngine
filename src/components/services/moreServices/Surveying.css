@@ -1,0 +1,113 @@
+.services .icon-box {
+  margin-bottom: 20px !important;
+  padding: 30px !important;
+  border-radius: 6px !important;
+  background: #252525 !important;
+  transition: 0.3s !important;
+}
+.services .icon-box:hover {
+  background: #2b2b2b !important;
+}
+.services .icon-box i {
+  float: left !important;
+  color: #e03a3c !important;
+  font-size: 40px !important;
+  line-height: 0 !important;
+}
+.services .icon-box h4 {
+  margin-left: 70px !important;
+  font-weight: 700 !important;
+  margin-bottom: 15px !important;
+  font-size: 18px !important;
+}
+.services .icon-box h4 a {
+  color: #fff !important;
+  transition: 0.3s !important;
+}
+.services .icon-box h4 a:hover {
+  text-decoration: underline !important;
+}
+.services .icon-box .icon-box:hover h4 a {
+  color: #e03a3c !important;
+}
+.services .icon-box p {
+  margin-left: 70px !important;
+  line-height: 24px !important;
+  font-size: 14px !important;
+}
+
+.tabs .nav-tabs {
+  border: 0 !important;
+}
+.tabs .nav-link {
+  border: 1px solid #b9b9b9 !important;
+  padding: 15px !important;
+  transition: 0.3s !important;
+  color: #111111 !important;
+  border-radius: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+}
+.tabs .nav-link .icn {
+  /* padding-right: 15px !important; */
+  font-size: 60px !important;
+}
+.tabs .nav-link h4 {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+}
+.tabs .nav-link:hover {
+  color: #e03a3c !important;
+}
+.tabs .nav-link.active {
+  background: #e03a3c !important;
+  color: #fff !important;
+  border-color: #e03a3c !important;
+}
+@media (max-width: 768px) {
+  .tabs .nav-link i {
+    padding: 0 !important;
+    line-height: 1 !important;
+    font-size: 36px !important;
+  }
+}
+@media (max-width: 575px) {
+  .tabs .nav-link {
+    padding: 15px !important;
+  }
+  .tabs .nav-link i {
+    font-size: 24px !important;
+  }
+}
+.tabs .tab-content {
+  margin-top: 30px !important;
+}
+.tabs .tab-pane h3 {
+  font-weight: 600 !important;
+  font-size: 26px !important;
+}
+.tabs .tab-pane ul {
+  list-style: none !important;
+  padding: 0 !important;
+}
+.tabs .tab-pane ul li {
+  padding-bottom: 10px !important;
+  font-size: 16px;
+}
+.tabs .tab-pane ul .check-icon {
+  font-size: 20px !important;
+  padding-right: 4px !important;
+  color: #e03a3c !important;
+}
+.tabs .tab-pane p:last-child {
+  margin-bottom: 0 !important;
+}
+.col-3 {
+  width: 30% !important;
+}
+/* .container {
+  max-width: 1200px !important;
+} */
