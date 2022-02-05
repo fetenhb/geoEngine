@@ -10,7 +10,7 @@
 }
 .services .icon-box i {
   float: left !important;
-  color: #e03a3c !important;
+  color: #37b6ff !important;
   font-size: 40px !important;
   line-height: 0 !important;
 }
@@ -28,7 +28,7 @@
   text-decoration: underline !important;
 }
 .services .icon-box .icon-box:hover h4 a {
-  color: #e03a3c !important;
+  color: #37b6ff !important;
 }
 .services .icon-box p {
   margin-left: 70px !important;
@@ -44,7 +44,7 @@
   padding: 15px !important;
   transition: 0.3s !important;
   color: #111111 !important;
-  border-radius: 0 !important;
+  border-radius: 20px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -52,7 +52,8 @@
 }
 .tabs .nav-link .icn {
   /* padding-right: 15px !important; */
-  font-size: 60px !important;
+  font-size: 40px !important;
+  margin-right: 15px !important;
 }
 .tabs .nav-link h4 {
   font-size: 18px !important;
@@ -60,12 +61,12 @@
   margin: 0 !important;
 }
 .tabs .nav-link:hover {
-  color: #e03a3c !important;
+  color: #37b6ff !important;
 }
 .tabs .nav-link.active {
-  background: #e03a3c !important;
+  background: #37b6ff !important;
   color: #fff !important;
-  border-color: #e03a3c !important;
+  border-color: #37b6ff !important;
 }
 @media (max-width: 768px) {
   .tabs .nav-link i {
@@ -100,14 +101,25 @@
 .tabs .tab-pane ul .check-icon {
   font-size: 20px !important;
   padding-right: 4px !important;
-  color: #e03a3c !important;
+  color: #37b6ff !important;
 }
 .tabs .tab-pane p:last-child {
   margin-bottom: 0 !important;
 }
 .col-3 {
-  width: 30% !important;
+  width: 80% !important;
+  margin-bottom: 15px !important;
 }
 /* .container {
   max-width: 1200px !important;
 } */
+.tabs .nav-tabs {
+  display: block !important;
+}
+@media (max-width: 968px) {
+  .tabs .nav-link .icn {
+    /* padding-right: 15px !important; */
+    font-size: 60px !important;
+    /* margin-right: 15px !important; */
+  }
+}

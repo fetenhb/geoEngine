@@ -128,7 +128,7 @@ section#download {
   opacity: 0;
 }
 .honeycomb-cell:hover::before {
-  background: #72f88e;
+  background: #ffbf58;
 }
 .honeycomb-cell:hover::after {
   opacity: 0;

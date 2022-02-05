@@ -7,7 +7,7 @@ const Service = ({ icon, heading, text }) => {
   return (
     <div className="feature">
       <div className="feature-icon">
-        <BsHexagon color="#00ff00" size={55} />
+        <BsHexagon color="#37b6ff" size={55} />
         <div className="inner-icon">{icon}</div>
       </div>
 

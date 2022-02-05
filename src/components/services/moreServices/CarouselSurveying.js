@@ -13,7 +13,7 @@ import car11 from "../../../assets/car11.jpg";
 import car12 from "../../../assets/car12.jpg";
 import "./Carousel.css";
 
-const Carousel = () => {
+const CarouselSurveying = () => {
   return (
     <div>
       <div
@@ -158,4 +158,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CarouselSurveying;

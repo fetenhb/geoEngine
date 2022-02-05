@@ -5,6 +5,7 @@ import geo from "../../assets/div11.png";
 import Feature from "./Service";
 import { FeatureList } from "./data";
 import Button from "../UI/Button/Button";
+import { Link } from "react-router-dom";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,7 +13,7 @@ import "aos/dist/aos.css";
 const OurServices = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 3000,
     });
   }, []);
   return (
@@ -24,8 +25,10 @@ const OurServices = () => {
             <hr />
           </div>
 
-          <BsFillBookmarkStarFill color="#00ff00" size={30} />
-          <h2>GEO ENGINE Geomatic and Geosciences Company</h2>
+          <BsFillBookmarkStarFill color="#ffbf58" size={30} />
+          <h2 style={{ fontSize: "2.5rem" }}>
+            GEO ENGINE Geomatic and Geosciences Company
+          </h2>
           <p className="u-text-small">
             Smart and scalable solution at the cutting edge of the latest
             techniques in precise surveying control and Geographic Information
@@ -48,7 +51,9 @@ const OurServices = () => {
           </div>
         </div>
         <div className=" moreServices">
-          <Button text={"More Services"} btnClass={"btn-light"} href={"#"} />
+          <Link to="/moreServices">
+            <Button text={"More Services"} btnClass={"btn-light"} href={"#"} />
+          </Link>{" "}
         </div>
       </div>
     </section>

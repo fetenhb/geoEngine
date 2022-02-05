@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Icon } from "@iconify/react";
 
 import "./Surveying.css";
-import Carousel from "./Carousel";
+import CarouselSurveying from "./CarouselSurveying";
 const Surveying = () => {
   useEffect(() => {
     // document.body.className = "bodyServices";
@@ -11,8 +11,8 @@ const Surveying = () => {
     <div id="tabs" class="tabs">
       <div class="container aos-init aos-animate" data-aos="fade-up">
         <div class="row">
-          <div class="col-md-7">
-            <ul class="nav nav-tabs row d-flex">
+          <div class="" style={{ display: "flex" }}>
+            <ul class="nav nav-tabs row d-flex col-md-4">
               <li class="nav-item col-3">
                 <a
                   class="nav-link active show"
@@ -48,7 +48,7 @@ const Surveying = () => {
               </li>
             </ul>
 
-            <div class="tab-content">
+            <div class="tab-content col-md-8">
               <div class="tab-pane active show" id="tab-1">
                 <div class="row">
                   <div
@@ -216,8 +216,8 @@ const Surveying = () => {
               </div>
             </div>
           </div>
-          <div class="col-md-5">
-            <Carousel />
+          <div>
+            <CarouselSurveying />
           </div>
         </div>
       </div>

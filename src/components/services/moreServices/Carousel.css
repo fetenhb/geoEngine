@@ -46,6 +46,7 @@
   width: 100% !important;
   position: relative !important;
   overflow: hidden !important;
+  margin-top: 100px;
 }
 .carousel > input[type="radio"] {
   position: absolute !important;

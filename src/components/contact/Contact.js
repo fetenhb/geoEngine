@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Footer.css";
+import "./Contact.css";
 import logo from "../../assets/logoo.png";
 import { Icon } from "@iconify/react";
 import {
@@ -10,7 +10,7 @@ import {
   FaGlobe,
 } from "react-icons/fa";
 
-const Footer = () => {
+const Contact = () => {
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [phone, setPhone] = useState("");
@@ -180,4 +180,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Contact;

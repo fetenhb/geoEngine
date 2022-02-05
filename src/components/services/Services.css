@@ -40,6 +40,7 @@ a {
   margin: 0 auto;
   padding-top: 70px;
   position: relative;
+  height: 1000px;
 }
 
 input,
@@ -50,11 +51,14 @@ input,
 }
 
 label {
+  display: flex !important;
+  justify-content: space-around !important;
+  height: 100px;
   font-weight: 700;
   font-size: 18px;
   display: block;
   float: left;
-  width: 14%;
+  width: 14.27%;
   padding: 1.5em;
   color: #757575;
   cursor: pointer;
@@ -67,7 +71,9 @@ label {
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3,
 #tab4:checked ~ #content4,
-#tab5:checked ~ #content5 {
+#tab5:checked ~ #content5,
+#tab6:checked ~ #content6,
+#tab7:checked ~ #content7 {
   display: block;
   padding: 20px;
   background: #fff;
@@ -87,11 +93,11 @@ label {
 
 .tab_container [id^="tab"]:checked + label {
   background: #fff;
-  box-shadow: inset 0 3px #0ce;
+  box-shadow: inset 0 3px #37b6ff;
 }
 
 .tab_container [id^="tab"]:checked + label .fa {
-  color: #0ce;
+  color: #37b6ff;
 }
 
 label .fa {
@@ -125,8 +131,65 @@ label .fa {
 
 .no_wrap {
   text-align: center;
-  color: #0ce;
+  color: #37b6ff;
 }
 .link {
   text-align: center;
+}
+
+/* .ul-training .li-training:before {
+  content: "";
+  position: absolute;
+  top: 1.2em;
+  left: -30px;
+  margin-top: -0.9em;
+  background: #f69ec4;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+.ul-training {
+  display: block;
+  margin-left: -10px;
+}
+
+.ul-training .li-training {
+  display: block;
+  position: relative;
+}
+
+.ul-training .li-training:not(:last-child) {
+  margin-bottom: 16px;
+} */
+#content3 ul,
+#content5 ul,
+#content7 ul {
+  list-style: none !important;
+  padding: 0 !important;
+}
+#content3 ul li,
+#content5 ul li,
+#content7 ul li {
+  padding-bottom: 10px !important;
+  font-size: 16px;
+}
+.check-icon {
+  font-size: 20px !important;
+  padding-right: 4px !important;
+  color: #37b6ff !important;
+}
+@media screen and (max-width: 1366px) {
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .iconnn {
+    font-size: 2em !important;
+  }
+}
+.iconnn {
+  font-size: 2em;
 }

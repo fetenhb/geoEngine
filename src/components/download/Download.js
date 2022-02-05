@@ -13,7 +13,7 @@ import Lazhar from "../../assets/Lazhar0967.jpg";
 const Download = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 3000,
     });
   }, []);
   return (

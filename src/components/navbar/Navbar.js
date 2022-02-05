@@ -5,7 +5,7 @@ import { SiAnaconda } from "react-icons/si";
 import Button from "../UI/Button/Button";
 import "../UI/Button/Button.css";
 import logo from "../../assets/log.png";
-
+import { HashLink as Link } from "react-router-hash-link";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -26,19 +26,26 @@ const Navbar = () => {
             className="nav-links"
             id={showMenu ? "nav-links-mobile" : "nav-links-mobile-hide"}
           >
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#AboutUs">About Us</a>
-            </li>
-            <li>
-              <a href="#ourServices">Our Services</a>
-            </li>
-            <li>
-              <a href="#footer">Contact Us</a>
-            </li>
-
+            <Link to="/#">
+              <li>
+                <a href="#">Home</a>
+              </li>
+            </Link>
+            <Link to="/#AboutUs">
+              <li>
+                <a href="#AboutUs">About Us</a>
+              </li>
+            </Link>
+            <Link to="/#ourServices">
+              <li>
+                <a href="#ourServices">Our Services</a>
+              </li>
+            </Link>
+            <Link to="/#footer">
+              <li>
+                <a href="#footer">Contact Us</a>
+              </li>
+            </Link>
             {/* <li>
             <a href="#" className="btn btn-dark">
               Get Started

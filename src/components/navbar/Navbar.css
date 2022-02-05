@@ -87,7 +87,7 @@ a.btn-light {
     display: none;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 696px) {
   /* show nav button on navbar menu */
   .nav-btn {
     display: block;

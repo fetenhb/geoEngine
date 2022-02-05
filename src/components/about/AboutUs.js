@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 const AboutUs = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 3000,
     });
   }, []);
   return (
@@ -18,7 +18,7 @@ const AboutUs = () => {
       <div className="container faq">
         <div className="u-title" data-aos="fade-up">
           <h1>ABOUT US</h1>
-          <hr /> <br /> <BsInfoSquare color="#00ff00" size={30} />
+          <hr /> <br /> <BsInfoSquare color="#ffbf58" size={30} />
           <br /> <br />
           <p className="u-text-small">
             GEO ENGINE Geomatic and Geosciences Company founded by a group of

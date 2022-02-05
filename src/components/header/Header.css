@@ -7,6 +7,11 @@
   align-items: flex-start;
   margin-top: 150px;
 }
+.headerr {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
 
 .header h1 {
   font-size: 4rem;
@@ -30,7 +35,7 @@
 
 h1 span:nth-child(1),
 h1 span:nth-child(2) {
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .header h1::after {
@@ -127,5 +132,126 @@ h1 span:nth-child(2) {
   }
   .header-right img {
     width: 80%;
+  }
+}
+.header-bg-service {
+  width: 100%;
+  height: 100%;
+  min-height: 90vh;
+  position: relative;
+  background: URL("../../assets/Airplane.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 10;
+}
+
+/* -----------text our services --------------------------*/
+.stroke {
+  -webkit-text-stroke-width: 2px !important;
+  -moz-text-stroke-width: 2px !important;
+  -webkit-text-stroke-color: #111827 !important;
+  -moz-text-stroke-color: #111827 !important;
+  color: transparent !important;
+  left: 50%;
+  top: 15%;
+}
+
+.shadow {
+  text-shadow: 6px 6px #58a9f5 !important;
+}
+
+.stroke-shadow {
+  color: #fef3c7 !important;
+  text-shadow: -2px 0 #111827, 0 -2px #111827, 2px 0 #111827, 0 2px #111827,
+    2px 2px #111827, -2px -2px #111827, -2px 2px #111827, 2px -2px #111827,
+    6px 6px #58a9f5 !important;
+}
+
+.halftone {
+  position: relative !important;
+  place-content: center !important;
+  text-align: center !important;
+}
+.halftone:after {
+  content: "Our services" !important;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHElEQVQYV2NUVFT8f//+fUYGBgYGMAEDcA5IBQCKJQVmn76DhAAAAABJRU5ErkJggg==)
+    repeat;
+  font-size: 10vw !important;
+  letter-spacing: 6px !important;
+  left: calc(50% + 6px) !important;
+  position: absolute !important;
+  top: calc(50% + 6px) !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: -1 !important;
+  -webkit-text-stroke-width: 0 !important;
+  -moz-text-stroke-width: 0 !important;
+  -webkit-background-clip: text !important;
+  -moz-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  -moz-text-fill-color: transparent !important;
+}
+
+.halftone-color:after {
+  background-color: #58a9f5 !important;
+}
+
+.serviceStyle {
+  font-size: 10vw !important;
+  font-weight: bold !important;
+  letter-spacing: 5px !important;
+  margin: 0 !important;
+}
+body .grid {
+  display: grid !important;
+  /* grid-gap: 5vw !important; */
+  grid-template-columns: 1fr !important;
+}
+@media screen and (min-width: 600px) {
+  body .grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media screen and (max-width: 1285px) {
+  .halftone:after {
+    padding-top: 100px;
+  }
+  .serviceStyle {
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 1324px) {
+  .halftone:after {
+    padding-top: 50px;
+  }
+  .serviceStyle {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .halftone:after {
+    padding-top: 100px;
+  }
+  .serviceStyle {
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .halftone:after {
+    padding-top: 100px;
+    font-size: 12vw !important;
+  }
+  .serviceStyle {
+    padding-top: 100px;
+    font-size: 12vw !important;
+  }
+}
+@media screen and (max-width: 597px) {
+  body .grid {
+    display: grid !important;
+    /* grid-gap: 5vw !important; */
+    grid-template-columns: 1fr 1fr !important;
   }
 }

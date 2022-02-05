@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React, { Component } from "react";
 import "./App.css";
 // import Navbar from "./components/navbar/Navbar";
@@ -6,7 +7,7 @@ import "./App.css";
 // import Download from "./components/download/Download";
 // import Subscribe from "./components/subscribe/Subscribe";
 // import Footer from "./components/footer/Footer";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import {
   Navbar,
   Header,
@@ -18,52 +19,32 @@ import {
 } from "./components";
 import Services from "./components/services/Services";
 import Service from "./components/ourServices/Service";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
-    <div>
-      <div>
-        {" "}
-        {/* <Navbar /> */}
-        {/* <header className="header-bg">
-          <Navbar />
-          <Header />
-        </header>
-        <About />
-        <Download />
-        <OurServices data-aos="fade-up" /> <Subscribe />
-        <Footer /> */}
-        <Services />
-        {/* <Routes>
-          <Route exact path="/" element={<Navbar />} /> */}
-        {/* <Route
-            exact={true}
-            path="/"
-            render={() => (
-              <>
-                <header className="header-bg">
-                  <Navbar />
-                  <Header />
-                </header>
-                <About />
-                <Download />
-                <OurServices data-aos="fade-up" /> <Subscribe />
-                <Footer />
-              </>
-            )}
-          /> */}
-        {/* <Route
-          path="/moreServices"
-          render={() => (
-            <>
-            
-              <Services />
-            </>
-          )}
-        /> */}
-        {/* </Routes>{" "} */}
-      </div>
-    </div>
+    <Routes>
+      <Route
+        exact={true}
+        path="/"
+        element={
+          <>
+            {" "}
+            <header className="header-bg">
+              <Navbar />
+              <Header />
+            </header>
+            <About />
+            <Download />
+            <OurServices data-aos="fade-up" /> <Subscribe />
+            <Contact />
+            <Footer />
+          </>
+        }
+      />
+      {/* <Services /> */}
+      <Route path="/moreServices" element={<Services />} />
+    </Routes>
   );
 }
 
