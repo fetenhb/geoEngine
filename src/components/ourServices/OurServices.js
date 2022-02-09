@@ -51,7 +51,7 @@ const OurServices = () => {
           </div>
         </div>
         <div className=" moreServices">
-          <Link to="/moreServices">
+          <Link to="/moreServices#serviceHeader">
             <Button text={"More Services"} btnClass={"btn-light"} href={"#"} />
           </Link>{" "}
         </div>

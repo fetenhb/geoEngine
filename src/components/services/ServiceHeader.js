@@ -4,7 +4,7 @@ import { BsMouse } from "react-icons/bs";
 
 const ServiceHeader = () => {
   return (
-    <div>
+    <div id="serviceHeader">
       <header className="header-bg-service">
         <div class="grid">
           <p class="stroke halftone halftone-color serviceStyle">

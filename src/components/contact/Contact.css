@@ -112,3 +112,57 @@
     transform: rotate(360deg);
   }
 }
+#not-mail {
+  display: none;
+  position: absolute;
+  top: 8px;
+  color: red;
+  right: 0;
+  transform-origin: 50% 50%;
+}
+@keyframes dongle {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(-10px, 0px);
+  }
+  20% {
+    transform: translate(10px, 0px);
+  }
+  30% {
+    transform: translate(-10px, 0px);
+  }
+  40% {
+    transform: translate(10px, 0px);
+  }
+  50% {
+    transform: translate(-10px, 0px);
+  }
+  60% {
+    transform: translate(10px, 0px);
+  }
+  70% {
+    transform: translate(-10px, 0px);
+  }
+  80% {
+    transform: translate(10px, 0px);
+  }
+  90% {
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+.error::placeholder {
+  color: red;
+}
+.email-content {
+  position: relative;
+  width: 100%;
+  /* border-bottom: 1px solid yellow; */
+}
+.form-message {
+  margin-top: 10px;
+}

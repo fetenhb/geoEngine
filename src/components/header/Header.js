@@ -12,7 +12,7 @@ import "aos/dist/aos.css";
 const Header = () => {
   useEffect(() => {
     AOS.init({
-      duration: 3000,
+      duration: 2500,
     });
   }, []);
   return (

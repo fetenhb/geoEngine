@@ -40,7 +40,7 @@ a {
   margin: 0 auto;
   padding-top: 70px;
   position: relative;
-  height: 1000px;
+  /* height: 1000px; */
 }
 
 input,
@@ -50,7 +50,7 @@ input,
   display: none;
 }
 
-label {
+.labelSer {
   display: flex !important;
   justify-content: space-around !important;
   height: 100px;
@@ -180,7 +180,7 @@ label .fa {
   color: #37b6ff !important;
 }
 @media screen and (max-width: 1366px) {
-  label {
+  .labelSer {
     display: flex;
     flex-direction: column;
     align-items: center;

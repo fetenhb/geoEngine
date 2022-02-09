@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Footer.css";
+import { HashLink as Link } from "react-router-hash-link";
+
 import logo from "../../assets/logoo.png";
 import { Icon } from "@iconify/react";
 import {
@@ -11,172 +13,217 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
-  const [name, setName] = useState("");
-  const [subject, setSubject] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    sendFeedback("template_waaamvo", {
-      name,
-      subject,
-      phone,
-      email,
-      message,
-    });
-  };
-
-  const sendFeedback = (templateId, variables) => {
-    window.emailjs
-      .send("service_u4zq01p", templateId, variables)
-      .then((res) => {
-        console.log("success !");
-        setName("");
-        setSubject("");
-        setPhone("");
-        setEmail("");
-        setMessage("");
-      })
-      .catch(
-        (err) =>
-          (document.querySelector(".form-message").innerHTML =
-            "Une erreur s'est produite, veuillez réessayer.")
-      );
-  };
-
   return (
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-        <div className="u-title" data-aos="fade-up">
-          <h1>CONTACT US</h1>
-          <hr />
-        </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-6">
+    // <section id="footer">
+    //   <div className="container footer">
+    //     <div className="footer-box">
+    //       <h4>Useful Links</h4>
+    //       <div className="footer-links">
+    //         <a href="#">&bull; Support</a>
+    //         <a href="#">&bull; About</a>
+    //         <a href="#">&bull; Learn</a>
+    //         <a href="#">&bull; Hosting</a>
+    //         <a href="#">&bull; Messenger</a>
+    //       </div>
+    //     </div>
+    //     <div className="footer-box">
+    //       <h4>Support</h4>
+    //       <div className="footer-links">
+    //         <a href="#">&bull; Support</a>
+    //         <a href="#">&bull; About</a>
+    //         <a href="#">&bull; Learn</a>
+    //         <a href="#">&bull; Hosting</a>
+    //         <a href="#">&bull; Messenger</a>
+    //       </div>
+    //     </div>
+    //     <div className="footer-box">
+    //       <h4>Contact Us</h4>
+    //       <div className="footer-contact u-text-small">
+    //         <p>
+    //           <FaMapMarkerAlt /> &nbsp; Address: United States.
+    //         </p>
+    //         <p>
+    //           <FaPhoneAlt /> &nbsp; Phone: +1230 123 1231.
+    //         </p>
+    //         <p>
+    //           <FaFax /> &nbsp; Fax: +12342762178
+    //         </p>
+    //         <p>
+    //           <FaEnvelope /> &nbsp; Email: info@socialx.com
+    //         </p>
+    //         <p>
+    //           <FaGlobe /> &nbsp; Website: www.socialx.com
+    //         </p>
+    //       </div>
+    //     </div>
+    //     <div className="footer-box">
+    //       <img src={logo} alt="logo" width={"100px"} />
+    //       <p className="u-text-small">&copy; Copyright 2021. SocialX.com</p>
+    //     </div>
+    //   </div>
+    // </section>
+    <div>
+      <footer id="footer">
+        <div class="footer-top">
+          <div
+            style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 20px" }}
+          >
             <div class="row">
-              <div class="col-md-12">
-                <div class="info-box">
-                  <i>
-                    <Icon icon="el:map-marker" class="bx bx-map" />
-                  </i>
-                  <h3>Our Address</h3>
-                  <p>Carthage Centre Rue du lac de Constance Bloc TUNISIE</p>
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h3>
+                  Geoengine<span>.</span>
+                </h3>
+                <p>
+                  Carthage Centre Rue du lac de Constance Bloc TUNISIE <br />
+                  A2 Les Berges du Lac
                   <br />
-                  <p>A2 Les Berges du Lac 1053</p>
-                  <br /> <p>Tunis</p>
-                </div>
+                  1053 Tunis <br />
+                  <br />
+                  <strong>Phone:</strong> +216 71 160 412
+                  <br />
+                  <strong>Email:</strong> contact@geoengine.net
+                  <br />
+                </p>
               </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i>
-                    {" "}
-                    <Icon icon="bx:bx-envelope" class="bx bx-envelope" />
-                  </i>
 
-                  <h3>Email Us</h3>
-                  <p>contact@geoengine.net</p>
-                </div>
+              <div class="col-lg-2 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li>
+                    <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
+                    <a href="#AboutUs">About us</a>
+                  </li>
+                  <li>
+                    <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
+                    <a href="#ourServices">Our Services</a>
+                  </li>
+                  <li>
+                    <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
+                    <a href="#contact">Contact Us</a>
+                  </li>
+                  {/* <li>
+                    <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
+                    <a href="#">Privacy policy</a>
+                  </li> */}
+                </ul>
               </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i>
-                    <Icon icon="bx:bx-phone-call" class="bx bx-phone-call" />
-                  </i>
-                  <h3>Call Us</h3>
-                  <p>+216 71 160 412</p>
+
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-6">
+                        {" "}
+                        <li>
+                          <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
+                          <Link to="/moreServices#tabs">
+                            <a>Surveying</a>{" "}
+                          </Link>
+                        </li>
+                        <li>
+                          <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
+                          <Link to="/moreServices#Permitting">
+                            {" "}
+                            <a>Permitting</a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
+                          <Link to="/moreServices#content3">
+                            {" "}
+                            <a>Training</a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
+                          <Link to="/moreServices#content4">
+                            {" "}
+                            <a>Bathymetric</a>
+                          </Link>
+                        </li>
+                      </div>
+                      <div class="col-md-6">
+                        {" "}
+                        <li>
+                          <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
+                          <Link to="/moreServices#content5">
+                            {" "}
+                            <a>GIS</a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
+                          <Link to="/moreServices#content6">
+                            {" "}
+                            <a>Geosciences</a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
+                          <Link to="/moreServices#content7">
+                            {" "}
+                            <a>Manpower Provider</a>
+                          </Link>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+
+              <div class="col-lg-4 col-md-6 footer-newsletter">
+                <div className="footer-box">
+                  <img
+                    src={logo}
+                    alt="logo"
+                    width={"300px"}
+                    style={{ marginLeft: "150px" }}
+                  />
+                  {/* <p className="u-text-small">
+                    &copy; Copyright 2021. SocialX.com
+                  </p> */}
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-6">
-            <form
-              action="forms/contact.php"
-              method="post"
-              role="form"
-              class="php-email-form"
-            >
-              <div class="row">
-                <div class="col form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    id="name"
-                    placeholder="Your Name"
-                    required
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                  />
-                </div>
-                <div class="col form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="phone"
-                    id="phone"
-                    placeholder="your phone"
-                    required
-                    onChange={(e) => setPhone(e.target.value)}
-                    value={phone}
-                  />
-                </div>
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="subject"
-                  id="subject"
-                  placeholder="Email"
-                  required
-                  onChange={(e) => setEmail(e.target.value)}
-                  value={email}
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="subject"
-                  id="subject"
-                  placeholder="Subject"
-                  required
-                  onChange={(e) => setSubject(e.target.value)}
-                  value={subject}
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  class="form-control"
-                  name="message"
-                  rows="5"
-                  placeholder="Message"
-                  required
-                  onChange={(e) => setMessage(e.target.value)}
-                  value={message}
-                ></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your message has been sent. Thank you!
-                </div>
-              </div>
-              <div class="text-center">
-                <button type="submit" onClick={handleSubmit}>
-                  Send Message
-                </button>
-              </div>
-            </form>
+        <div class="container d-md-flex py-4">
+          <div class="me-md-auto text-center text-md-start">
+            <div class="copyright">
+              &copy; Copyright{" "}
+              <strong>
+                <span>Geomatics and geosciences engineering SARL</span>
+              </strong>
+            </div>
+          </div>
+          <div class="social-links text-center text-md-end pt-3 pt-md-0">
+            <a href="#" class="facebook">
+              <Icon icon="bx:bxl-facebook" />
+            </a>
+            <a href="#" class="instagram">
+              <Icon icon="bx:bxl-instagram" />
+            </a>
+
+            <a href="#" class="linkedin">
+              <Icon icon="bx:bxl-linkedin" />
+            </a>
           </div>
         </div>
-      </div>
-    </section>
+      </footer>
+
+      <a
+        href="#"
+        class="back-to-top d-flex align-items-center justify-content-center"
+      >
+        <i class="bi bi-arrow-up-short"></i>
+      </a>
+    </div>
   );
 };
 

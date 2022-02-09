@@ -10,47 +10,51 @@ import "./moreServices/Surveying.css";
 import CarouselBathymetric from "./moreServices/CarouselBathymetric";
 import CarouselGis from "./moreServices/CarouselGis";
 import Geosciences from "./moreServices/Geosciences";
+import Permetting from "./moreServices/Permetting";
+import Footer from "../footer/Footer";
+import ScrollToTop from "../ScrollToTop";
 const Services = () => {
   const [checked, setChecked] = useState(true);
   return (
     <div>
+      <ScrollToTop />
       <Navbar />
       <ServiceHeader />
-      <h1 id="moreeServices">Responsive CSS Tabs</h1>
+      {/* <h1 id="moreeServices">Responsive CSS Tabs</h1> */}
       <div class="tab_container">
         <input id="tab1" type="radio" name="tabs" defaultChecked={true} />
-        <label for="tab1">
+        <label className="labelSer" for="tab1">
           <Icon className="iconnn" icon="icon-park-outline:land-surveying" />
 
           <span>Surveying</span>
         </label>
         <input id="tab2" type="radio" name="tabs" />
-        <label for="tab2">
+        <label className="labelSer" for="tab2">
           <Icon className="iconnn" icon="ant-design:file-done-outlined" />
           <span>Permitting </span>
         </label>
         <input id="tab3" type="radio" name="tabs" />
-        <label for="tab3">
+        <label className="labelSer" for="tab3">
           <Icon className="iconnn" icon="healthicons:i-training-class" />
           <span>Training</span>
         </label>
         <input id="tab4" type="radio" name="tabs" />
-        <label for="tab4">
+        <label className="labelSer" for="tab4">
           <Icon className="iconnn" icon="gis:measure" />
           <span>Bathymetric</span>
         </label>
         <input id="tab5" type="radio" name="tabs" />
-        <label for="tab5">
+        <label className="labelSer" for="tab5">
           <Icon className="iconnn" icon="emojione-monotone:world-map" />
           <span>GIS</span>
         </label>
         <input id="tab6" type="radio" name="tabs" />
-        <label for="tab6">
+        <label className="labelSer" for="tab6">
           <Icon className="iconnn" icon="gis:earth-north-o" />
           <span>Geosciences</span>
         </label>{" "}
         <input id="tab7" type="radio" name="tabs" />
-        <label for="tab7">
+        <label className="labelSer" for="tab7">
           <Icon className="iconnn" icon="gis:position-man" />
           <span>Manpower Provider</span>
         </label>
@@ -59,20 +63,10 @@ const Services = () => {
           <Surveying />
         </section>
         <section id="content2" class="tab-content sec">
-          <h3>Permitting 2</h3>{" "}
-          <div className="container">
-            <p style={{ fontSize: "18px", marginTop: "30px" }}>
-              Seismic permitting is essential to oil and gas exploration, so we
-              provide turnkey 2D and 3D seismic permitting services. From start
-              to finish, our seismic project managers are trained to handle
-              everything — including research, lease checks, verification of
-              ownership, and more.
-            </p>
-            <CarouselPermitting />
-          </div>
+          <Permetting />
         </section>
         <section id="content3" class="tab-content sec">
-          <h3>Headline 3</h3>{" "}
+          <h3>Training</h3>{" "}
           <div className="container">
             <p style={{ fontSize: "18px", marginTop: "30px" }}>
               GEO ENGINE deploys its rich experience to extend customer
@@ -247,6 +241,7 @@ const Services = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };
