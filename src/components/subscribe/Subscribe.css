@@ -73,3 +73,6 @@ form button {
     width: 60%;
   }
 }
+.social-icons a:hover {
+  color: white !important;
+}

@@ -1,27 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navbar from "../navbar/Navbar";
 import { Icon } from "@iconify/react";
-import "./Services.css";
-import Surveying from "./moreServices/Surveying";
-import CarouselSurveying from "./moreServices/CarouselSurveying";
-import ServiceHeader from "./ServiceHeader";
-import CarouselPermitting from "./moreServices/CarouselPermitting";
-import "./moreServices/Surveying.css";
-import CarouselBathymetric from "./moreServices/CarouselBathymetric";
-import CarouselGis from "./moreServices/CarouselGis";
-import Geosciences from "./moreServices/Geosciences";
-import Permetting from "./moreServices/Permetting";
+import "../services/Services.css";
+import Surveying from "../services/moreServices/Surveying";
+import ServiceHeader from "../services/ServiceHeader";
+import "../services/moreServices/Surveying.css";
+import CarouselBathymetric from "../services/moreServices/CarouselBathymetric";
+import CarouselGis from "../services/moreServices/CarouselGis";
+import Geosciences from "../services/moreServices/Geosciences";
+import Permetting from "../services/moreServices/Permetting";
 import Footer from "../footer/Footer";
 import ScrollToTop from "../ScrollToTop";
-const Services = () => {
-  const [checked, setChecked] = useState(true);
+const FooterBathymetric = () => {
   return (
     <div>
       <ScrollToTop />
       <Navbar />
       <ServiceHeader />
-      <div class="tab_container" id="serv">
-        <input id="tab1" type="radio" name="tabs" defaultChecked={true} />
+      {/* <h1 id="moreeServices">Responsive CSS Tabs</h1> */}
+      <div class="tab_container" id="servicess">
+        <input id="tab1" type="radio" name="tabs" />
         <label className="labelSer" for="tab1">
           <Icon className="iconnn" icon="icon-park-outline:land-surveying" />
 
@@ -37,7 +35,7 @@ const Services = () => {
           <Icon className="iconnn" icon="healthicons:i-training-class" />
           <span>Training</span>
         </label>
-        <input id="tab4" type="radio" name="tabs" />
+        <input id="tab4" type="radio" name="tabs" defaultChecked={true} />
         <label className="labelSer" for="tab4">
           <Icon className="iconnn" icon="gis:measure" />
           <span>Bathymetric</span>
@@ -58,7 +56,7 @@ const Services = () => {
           <span>Manpower Provider</span>
         </label>
         <section id="content1" class="tab-content sec">
-          <h3 id="surv">Surveying</h3>
+          <h3>Surveying</h3>
           <Surveying />
         </section>
         <section id="content2" class="tab-content sec">
@@ -245,4 +243,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default FooterBathymetric;

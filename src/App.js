@@ -20,6 +20,12 @@ import {
 import Services from "./components/services/Services";
 import Service from "./components/ourServices/Service";
 import Contact from "./components/contact/Contact";
+import FooterPermitting from "./components/footerLinks/FooterPermitting";
+import FooterTraining from "./components/footerLinks/FooterTraining";
+import FooterBathymetric from "./components/footerLinks/FooterBathymetric";
+import FooterGIS from "./components/footerLinks/FooterGIS";
+import FooterGeosciences from "./components/footerLinks/FooterGeosciences";
+import FooterManpowerProvider from "./components/footerLinks/FooterManpowerProvider";
 
 function App() {
   return (
@@ -44,6 +50,15 @@ function App() {
       />
       {/* <Services /> */}
       <Route path="/moreServices" element={<Services />} />
+      <Route path="/moreServices/permitting" element={<FooterPermitting />} />
+      <Route path="/moreServices/Training" element={<FooterTraining />} />
+      <Route path="/moreServices/Bathymetric" element={<FooterBathymetric />} />
+      <Route path="/moreServices/GIS" element={<FooterGIS />} />
+      <Route path="/moreServices/Geosciences" element={<FooterGeosciences />} />
+      <Route
+        path="/moreServices/ManpowerProvider"
+        element={<FooterManpowerProvider />}
+      />
     </Routes>
   );
 }

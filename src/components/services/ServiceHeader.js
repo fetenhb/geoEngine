@@ -32,7 +32,7 @@ const ServiceHeader = () => {
             {/* <img src={logo} alt="phone" /> */}
           </div>{" "}
           <div className="floating-icon" style={{ bottom: "15%" }}>
-            <a href="#moreeServices">
+            <a href="#serv">
               <BsMouse color="#fff" size={25} className="mouse" />
             </a>
           </div>

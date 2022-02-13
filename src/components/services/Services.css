@@ -41,6 +41,7 @@ a {
   padding-top: 70px;
   position: relative;
   /* height: 1000px; */
+  margin-bottom: 100px;
 }
 
 input,
@@ -89,6 +90,8 @@ input,
 }
 .tab_container .tab-content h3 {
   text-align: center;
+  font-size: 3rem;
+  margin-top: 10px;
 }
 
 .tab_container [id^="tab"]:checked + label {

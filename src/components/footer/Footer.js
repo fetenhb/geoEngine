@@ -91,19 +91,19 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                   </li>
                   <li>
                     <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
-                    <a href="#AboutUs">About us</a>
+                    <a href="/#AboutUs">About us</a>
                   </li>
                   <li>
                     <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
-                    <a href="#ourServices">Our Services</a>
+                    <a href="/#ourServices">Our Services</a>
                   </li>
                   <li>
                     <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
-                    <a href="#contact">Contact Us</a>
+                    <a href="/#contact">Contact Us</a>
                   </li>
                   {/* <li>
                     <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
@@ -121,27 +121,27 @@ const Footer = () => {
                         {" "}
                         <li>
                           <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
-                          <Link to="/moreServices#tabs">
+                          <Link to="/moreServices#serv">
                             <a>Surveying</a>{" "}
                           </Link>
                         </li>
                         <li>
                           <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
-                          <Link to="/moreServices#Permitting">
+                          <Link to="/moreServices/permitting#servicess">
                             {" "}
                             <a>Permitting</a>
                           </Link>
                         </li>
                         <li>
                           <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
-                          <Link to="/moreServices#content3">
+                          <Link to="/moreServices/Training#servicess">
                             {" "}
                             <a>Training</a>
                           </Link>
                         </li>
                         <li>
                           <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
-                          <Link to="/moreServices#content4">
+                          <Link to="/moreServices/Bathymetric#servicess">
                             {" "}
                             <a>Bathymetric</a>
                           </Link>
@@ -151,21 +151,21 @@ const Footer = () => {
                         {" "}
                         <li>
                           <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
-                          <Link to="/moreServices#content5">
+                          <Link to="/moreServices/Gis#servicess">
                             {" "}
                             <a>GIS</a>
                           </Link>
                         </li>
                         <li>
                           <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
-                          <Link to="/moreServices#content6">
+                          <Link to="/moreServices/Geosciences#servicess">
                             {" "}
                             <a>Geosciences</a>
                           </Link>
                         </li>
                         <li>
                           <Icon icon="bx:bx-chevron-right" className="icnn" />{" "}
-                          <Link to="/moreServices#content7">
+                          <Link to="/moreServices/ManpowerProvider#servicess">
                             {" "}
                             <a>Manpower Provider</a>
                           </Link>
@@ -184,9 +184,6 @@ const Footer = () => {
                     width={"300px"}
                     style={{ marginLeft: "150px" }}
                   />
-                  {/* <p className="u-text-small">
-                    &copy; Copyright 2021. SocialX.com
-                  </p> */}
                 </div>
               </div>
             </div>
@@ -203,14 +200,22 @@ const Footer = () => {
             </div>
           </div>
           <div class="social-links text-center text-md-end pt-3 pt-md-0">
-            <a href="#" class="facebook">
+            <a
+              href="https://www.facebook.com/Geoengine-104952554767600"
+              class="facebook"
+              target="_blank"
+            >
               <Icon icon="bx:bxl-facebook" />
             </a>
             <a href="#" class="instagram">
               <Icon icon="bx:bxl-instagram" />
             </a>
 
-            <a href="#" class="linkedin">
+            <a
+              href="https://www.linkedin.com/company/geo-engine/about/"
+              target="_blank"
+              class="linkedin"
+            >
               <Icon icon="bx:bxl-linkedin" />
             </a>
           </div>

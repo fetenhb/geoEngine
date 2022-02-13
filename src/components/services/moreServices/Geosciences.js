@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 import "./Surveying.css";
 const Geosciences = () => {
   return (
-    <div id="tabs" class="tabs">
+    <div id="geo" class="tabs">
       <div class="container aos-init aos-animate" data-aos="fade-up">
         <div class="row">
           <div class="" style={{ display: "flex" }}>

@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="navbar fixed-top  ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img src={logo} alt="" width="110" height="90" />
         </a>
 
@@ -41,9 +41,9 @@ const Navbar = () => {
                 <a href="#ourServices">Our Services</a>
               </li>
             </Link>
-            <Link to="/#footer">
+            <Link to="/#contact">
               <li>
-                <a href="#footer">Contact Us</a>
+                <a href="#contact">Contact Us</a>
               </li>
             </Link>
             {/* <li>
