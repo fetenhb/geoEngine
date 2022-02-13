@@ -1,8 +1,5 @@
 import React, { useEffect } from "react";
-import "./Download.css";
-import { FaApple, FaWindows } from "react-icons/fa";
-import { GrAndroid } from "react-icons/gr";
-import { IconContext } from "react-icons";
+import "./Gallery.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import bull from "../../assets/bull_4982.JPG";
@@ -10,7 +7,7 @@ import DSC from "../../assets/DSC01559.JPG";
 import DTM from "../../assets/DTM2.png";
 import Lazhar from "../../assets/Lazhar0967.jpg";
 
-const Download = () => {
+const Gallery = () => {
   useEffect(() => {
     AOS.init({
       duration: 3000,
@@ -40,27 +37,8 @@ const Download = () => {
 
         <li class="honeycomb-cell honeycomb__placeholder"></li>
       </ul>
-      {/* <div className="container download" data-aos="fade-up">
-        <h2>SocialX messenger download</h2>
-        <p className="u-text-small">
-          Our apps are available for download on all stores.
-        </p>
-        <IconContext.Provider value={{ size: "15" }}>
-          <div className="download-icons">
-            <div className="download-icon">
-              <FaApple /> <p>ios</p>
-            </div>
-            <div className="download-icon">
-              <GrAndroid /> <p>Android</p>
-            </div>
-            <div className="download-icon">
-              <FaWindows /> <p>Windows</p>
-            </div>
-          </div>
-        </IconContext.Provider>
-      </div> */}
     </section>
   );
 };
 
-export default Download;
+export default Gallery;

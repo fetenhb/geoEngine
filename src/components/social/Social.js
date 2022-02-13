@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import "./Subscribe.css";
-import { TiSocialGooglePlus } from "react-icons/ti";
+import "./Social.css";
+
 import { FaFacebookF, FaLinkedin, FaInstagram } from "react-icons/fa";
-import logogeo from "../../assets/Logo-geo.png";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Subscribe = () => {
+const Social = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -50,4 +50,4 @@ const Subscribe = () => {
   );
 };
 
-export default Subscribe;
+export default Social;

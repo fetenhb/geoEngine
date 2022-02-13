@@ -1,24 +1,17 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import React, { Component } from "react";
 import "./App.css";
-// import Navbar from "./components/navbar/Navbar";
-// import Header from "./components/header/Header";
-// import Features from "./components/features/Features";
-// import Download from "./components/download/Download";
-// import Subscribe from "./components/subscribe/Subscribe";
-// import Footer from "./components/footer/Footer";
 
 import {
   Navbar,
   Header,
   OurServices,
-  Download,
-  Subscribe,
+  Gallery,
+  Social,
   About,
   Footer,
 } from "./components";
 import Services from "./components/services/Services";
-import Service from "./components/ourServices/Service";
 import Contact from "./components/contact/Contact";
 import FooterPermitting from "./components/footerLinks/FooterPermitting";
 import FooterTraining from "./components/footerLinks/FooterTraining";
@@ -41,8 +34,8 @@ function App() {
               <Header />
             </header>
             <About />
-            <Download />
-            <OurServices data-aos="fade-up" /> <Subscribe />
+            <Gallery />
+            <OurServices data-aos="fade-up" /> <Social />
             <Contact />
             <Footer />
           </>
